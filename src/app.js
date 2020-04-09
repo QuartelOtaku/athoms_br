@@ -26,6 +26,6 @@ app.use(body_parser.urlencoded({extended:false}))
 * 403: acesso negado
 * 500: internal server error*/
 app.use('/', index_route)
-app.use('/atom', atom_route)
+app.use('/atoms', atom_route)
 
 module.exports = app

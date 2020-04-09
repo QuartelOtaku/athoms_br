@@ -4,52 +4,66 @@ const Schema = mongoose.Schema
 
 const schema = new Schema({
     nome: {
-        type: String
+        type: String,
+        required: true
     },
     descricao: {
-        type: String
+        type: String,
+        required: true
     },
     classificacao: {
-        type: String
+        type: String,
+        required: true
     },
     numero_atomico: {
-        type: Number
+        type: Number,
+        required: true
     },
     simbolo_atomico: {
-        type: String
+        type: String,
+        required: true
     },
     numero_de_massa: {
-        type: Number
+        type: Number,
+        required: true
     },
     grupo: {
-        type: Number
+        type: Number,
+        required: true
     },
     periodo: {
-        type: Number
+        type: Number,
+        required: true
     },
     ano_da_descoberta: {
         type: Number
     },
     numero_cas: {
-        type: String
+        type: String,
+        required: true
     },
     descobridor: {
         type: String
     },
     densidade: {
-        type: Number
+        type: Number,
+        required: true
     },
     fusao:{
-        type: Number
+        type: Number,
+        required: true
     },
     ebulicao:{
-        type: Number
+        type: Number,
+        required: true
     },
     valencia:{
-        type: Number
+        type: Number,
+        required: true
     },
     quadra:{
-        type: String
+        type: String,
+        required: true
     },
     comp_universo: {
         type: Number
