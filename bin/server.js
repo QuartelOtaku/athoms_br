@@ -1,4 +1,18 @@
-exports.normalize_port = function(val) {
+const app = require('../src/app') //Referencia ao app que está dentro de src
+const debug = require('debug')('nodestr:server')
+const http = require('http')
+const port = normalize_port(process.env.PORT || '1515')
+
+app.set('port', port)
+
+const server = http.createServer(app)
+
+server.listen(port)
+server.on('error', on_error)
+server.on('listening', on_listening)
+console.log('API rodando na porta '+port)
+
+function normalize_port(val) {
     const port = parseInt(val, 10) //O valor recebido como parâmetro é convertido para int
     if(isNaN(port)){ // Se deu erro na conversão
         return val // Retorne o valor informado
@@ -9,7 +23,7 @@ exports.normalize_port = function(val) {
     return false
 }
 
-exports.on_error = function(error){
+function on_error(error){
     if (error.syscall !== 'listen'){
         throw error
     }
@@ -29,7 +43,7 @@ exports.on_error = function(error){
     }
 }
 
-exports.on_listening = function () {
+function on_listening () {
     const addr = server.address()
     const bind = typeof addr === 'string' ? 'pipe' + addr : 'port ' + addr.port
     debug('Listening on '+ bind)

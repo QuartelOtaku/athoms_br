@@ -1,8 +1,21 @@
 {
   "name": "athoms_br",
   "version": "1.0.0",
+  "description": "API que facilita para coleta de propriedades de átomos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "keywords": [
+    "átomos", "tabela periódica", "química"
+  ],
+  "author": {
+    "name": "Pierre Vieira",
+    "email": "pierrevieiraggg@gmail.com",
+    "github": "https://github.com/PierreVieira"
+  },
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.17.1"
+      "express": "^4.17.1"
   }
 }
