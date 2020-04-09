@@ -1,4 +1,6 @@
 'use strict'
+const mongoose = require('mongoose')
+const Atomo = mongoose.model('Atomo')
 
 exports.get = (req, res, next) => {
     Atomo
