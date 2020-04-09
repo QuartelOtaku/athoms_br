@@ -1,4 +1,4 @@
-# Athoms br
+# Atoms br
 Cataloga e retorna átomos por meio de API Rest.<br>API criada para auxiliar no desenvolvimento do app <b>[FindLab](https://play.google.com/store/apps/details?id=com.agronault.FindLabs)</b>.
 
 Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv.ms/x/s!AlGbQ-t3b4ofgbcpYMsYAKaJlQaCEw?e=f6KO8k).
