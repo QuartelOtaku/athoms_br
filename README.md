@@ -35,6 +35,7 @@ Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv
 - Meteoritos
 
 ## Como Usar
-Digite: `http://localhost:1515/atomo/<número atômico do átomo>`
-
-Como por exemplo: `http://localhost:1515/atomo/6` para obter informações do carbono
+<strong>1)</strong> Instalar as dependências presentes no arquivo package.json<br>
+<strong>2)</strong> 
+    Digite: `http://localhost:1515/atomo/<número atômico do átomo>`.<br>
+    Como por exemplo: `http://localhost:1515/atomo/6` para obter informações do carbono.
