@@ -3,7 +3,7 @@ function lista_atomos(){
         const objeto_json = require('./atomos_json.json')
         return objeto_json.data
     }catch (e) {
-        console.log('Erro na abertura do aruqivo atomos_json.json')
+        console.log('Erro na abertura do arquivo atomos_json.json')
         return process.exit(-1)
     }
 }
