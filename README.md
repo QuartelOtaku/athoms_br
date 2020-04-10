@@ -1,5 +1,5 @@
 # Atoms br
-Cataloga e retorna átomos por meio de API Rest.<br>API criada para auxiliar no desenvolvimento do app <b>[FindLab](https://play.google.com/store/apps/details?id=com.agronault.FindLabs)</b>.
+Cataloga e retorna átomos por meio de API Rest.<br>API criada para auxiliar no desenvolvimento do app <b>[FindLab](https://play.google.com/store/apps/details?id=com.agronault.FindLabs) </b>.
 
 Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv.ms/x/s!AlGbQ-t3b4ofgbcpYMsYAKaJlQaCEw?e=f6KO8k).
 
@@ -33,4 +33,8 @@ Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv
 - Corpo Humano
 - Crosta Terrestre
 - Meteoritos
+
 ## Como Usar
+Digite: `http://localhost:1515/atomo/<número atômico do átomo>`
+
+Como por exemplo: `http://localhost:1515/atomo/6` para obter informações do carbono
