@@ -1,28 +1,9 @@
 {
-  "name": "atoms_br",
+  "name": "athoms_br",
   "version": "1.0.0",
-  "description": "API que facilita para coleta de propriedades de átomos",
-  "main": "server.js",
-  "scripts": {
-    "start": "node ./bin/server.js"
-  },
-  "keywords": [
-    "átomos",
-    "tabela periódica",
-    "química"
-  ],
-  "author": {
-    "name": "Pierre Vieira",
-    "email": "pierrevieiraggg@gmail.com",
-    "github": "https://github.com/PierreVieira"
-  },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
-    "mongoose": "^5.9.7"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+    "restify": "^8.5.1"
   }
 }
