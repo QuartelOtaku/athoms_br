@@ -1,12 +1,26 @@
-var restify = require('restify')
+function lista_atomos(){
+    try{
+        const objeto_json = require('./atomos_json.json')
+        return objeto_json.data
+    }catch (e) {
+        console.log('Erro na abertura do aruqivo atomos_json.json')
+        return process.exit(-1)
+    }
+}
 
+const express = require('express')
+const app = express()
+const porta = 1515
+const atomos = lista_atomos()
 
-var server = restify.createServer({
-    name: 'Atoms BR API'
+app.get('/atomo/:id', (req, res) =>{
+    posicao = req.params.id - 1
+    if (posicao >= atomos.length){
+        return res.json({response: 'Ainda não temos o átomo de número atômico '+(posicao+1)+' registrado'})
+    }
+    return res.json(atomos[posicao])
 })
 
-server.get('/hello', hellof)
-
-server.listen(5000, function () {
-    console.log('%s sendo executado', server.name)
+app.listen(porta, () =>{
+    console.log('Servidor iniciando na porta '+porta)
 })
