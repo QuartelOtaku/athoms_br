@@ -1,7 +1,8 @@
-# Atoms br
-Cataloga e retorna átomos por meio de API Rest.<br>API criada para auxiliar no desenvolvimento do app <b>[FindLab](https://play.google.com/store/apps/details?id=com.agronault.FindLabs) </b>.
+# Excel to Json conversor 
+Transforma uma tabela em excel com informações de átomos em arquivo json.<br>Programa criado para auxiliar no desenvolvimento do app **[FindLab](https://play.google.com/store/apps/details?id=com.agronault.FindLabs)**.
 
 Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv.ms/x/s!AlGbQ-t3b4ofgbcpYMsYAKaJlQaCEw?e=f6KO8k).
+<br>Para acessar uma <b>API rest</b> com as informações dos átomos clique [aqui](https://github.com/QuartelOtaku/athoms_br).
 
 ## Informações disponíveis
 <b>-> Visão Geral</b>
@@ -14,7 +15,7 @@ Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv
 - Número de Massa
 - Grupo
 - Período
-- Ano da Descoberta
+- Ano da Descoberta (?)
 - Número Cas
 - Quem Descobriu
 
@@ -27,15 +28,11 @@ Para consultar os átomos disponíveis até o momento clique [aqui](https://1drv
 - Quadra
 
 <b>-> Composição</b>
-- Universo
-- Sol
+- Universo (?)
+- Sol (?)
 - Oceano
-- Corpo Humano
+- Corpo Humano (?)
 - Crosta Terrestre
-- Meteoritos
+- Meteoritos (?)
 
-## Como Usar
-<strong>1)</strong> Instalar as dependências presentes no arquivo package.json<br>
-<strong>2)</strong> 
-    Digite: `http://localhost:1515/atomo/<número atômico do átomo>`.<br>
-    Como por exemplo: `http://localhost:1515/atomo/6` para obter informações do carbono.
+**OBS:** Os pontos que possuem uma interrogação (?) significam que essa informação pode ser desconhecida para tal átomo.
