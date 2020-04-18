@@ -1,6 +1,6 @@
 function lista_atomos(){
     try{
-        const objeto_json = require('../atomos_json.json')
+        const objeto_json = require('./atomos_json.json')
         return objeto_json.data
     }catch (e) {
         console.log('Erro na abertura do arquivo atomos_json.json')
