@@ -6,6 +6,10 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "node node_modules/index.js"
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuartelOtaku/athoms_br.git"
   }
 }
