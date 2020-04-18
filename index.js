@@ -10,8 +10,8 @@ function lista_atomos(){
 
 const express = require('express')
 const app = express()
-const porta = 1515
-const atomos = lista_atomos()
+const porta = process.env.PORT || 1515
+const atomos = lista_atomos() || []
 
 app.get('/atomo/:id', (req, res) => {
     posicao = req.params.id - 1
